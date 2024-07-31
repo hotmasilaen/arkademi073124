@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateForm() {
+        let x = document.forms['myForm']["fname"].value;
+        if (x == '') {
+            alert("Nama harus diisi!");
+            return false;
+        }
+    }
+</script>
+<style>
+    tr,
+    td,
+    th {
+        border: 1px solid black;
+    }
+
+    img {
+        filter: blur(1px);
+
+    }
+
+    .img1 {
+        width: 100px;
+
+        /* animation: animasiBg 2s ease 2 alternate forwards running; */
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-name: animasiBg;
+        animation-timeline: auto;
+        animation-range-start: normal;
+
+        /* transition: filter 2s, width 2s;
+        transition-delay: 2s; */
+    }
+
+    .img2 {
+        width: 0px;
+
+        /* animation: animasiBg 2s ease 2 alternate forwards running; */
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-name: animasiBg2;
+        animation-timeline: auto;
+        animation-range-start: normal;
+
+        /* transition: filter 2s, width 2s;
+        transition-delay: 2s; */
+    }
+
+    .img3 {
+        width: 0px;
+        filter: blur(2px);
+        /* animation: animasiBg 2s ease 2 alternate forwards running; */
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-name: animasiBg2;
+        animation-timeline: auto;
+        animation-range-start: normal;
+
+        /* transition: filter 2s, width 2s;
+        transition-delay: 2s; */
+    }
+
+
+    /* img:hover {
+        filter: blur(6px);
+        width: 500px;
+    } */
+
+    @keyframes animasiBg {
+        from {
+            width: 100px;
+        }
+
+        to {
+            width: 500px;
+        }
+
+    }
+
+    @keyframes animasiBg2 {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 500px;
+        }
+
+    }
+
+    @keyframes animasiBg3 {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 500px;
+            filter: blur(4px);
+
+        }
+
+    }
+</style>
+
+<body>
+    <br>
+    <!-- <img class="img1"
+        src="./beautiful-soft-blue-floral-pastel-background-hd-no-text-no-writing-no-lines-no-watermark-ai-generative-photo.jpg" />
+
+    <img class="img2"
+        src="./cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA3L3Jhd3BpeGVsX29mZmljZV8zNV9jeWFub3R5cGVfYXJ0X21pbmltYWxfZHJ5X3R1bGlwX2JhY2tncm91bmRfZWZkY2Q5MzctMWEyNC00MWJlLWI3YzctOTk5YTc3ODAzYWQwXzEuanBn.webp" />
+
+    <img class="img3" src="./images (1).jpg" /> -->
+
+    <form name="myForm" onsubmit="return validateForm()">
+        Name:<input type="text" name=" fname " />
+        <input type="submit" value="submit" />
+    </form>
+    <!-- KURSUS ONLINE -->
+    <!-- <h1>Aplikasi Menjual Aksesoris</h1> -->
+    <!-- <a href="promo hari ini"><b>Promo hari ini</b></a>
+    Tulisan ini tidak tebal
+    <b>tulisan ini tebal</b> -->
+    <!-- 
+<a href="https://shopee.co.id/list/Toko/Aksesoris/Wanita">
+    <img src="./images.jpg" />
+</a>
+<p>Kursus Online dari
+    Lembaga Pelatihan Resmi untuk
+    Tingkatkan Karier Profesionalmu</p>
+</br> -->
+
+    <!-- <h2>form validation</h2>
+
+<form name="myForm" onsubmit="return validateForm()">
+    Name:<input type="text" name=" fname " />
+    <input type="submit" value="submit" />
+</form>
+<br>Kursus Online dari</br>
+Lembaga Pelatihan Resmi untuk</br>
+Tingkatkan Karier Profesionalmu</mark>
+</br></br>
+<table>
+    <thead>
+        <tr>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>No HP</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Eli</td>
+            <td>Jakarta</td>
+            <td>0821y382y939</td>
+        </tr>
+        <tr>
+            <td>Santa</td>
+            <td>Lampung</td>
+            <td>0821y382y3233939</td>
+        </tr>
+        <tr>
+            <td>Putri</td>
+            <td>Jakarta</td>
+            <td>0821y38vvvv2y939</td>
+        </tr>
+    </tbody>
+</table> -->
+</body>
+
+</html>
